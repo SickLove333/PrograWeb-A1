@@ -1,0 +1,379 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #efefef;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #803bec; /* Línea fina morada */
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navbar a {
+    display: inline-block;
+    background-color: #ededed;
+    color: #803bec;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #803bec;
+    color: #efefef;
+    cursor: pointer;
+}
+
+/* Tiles Grid */
+.tiles-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.tile {
+    flex: 1 1 calc(25% - 1rem); /* Cada tile ocupa un cuarto del espacio */
+    background-color: #803bec; /* Fondo morado */
+    color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none; /* Sin subrayado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #9c4af7; /* Más claro al pasar el cursor */
+}
+
+.tile h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tile p {
+    font-size: 1rem;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6a0dad;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Sections */
+.section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.section.dark {
+    background: #333;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.highlight {
+    background: #eaeaea;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #6a0dad;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Features Section */
+#features {
+    background-color: #803bec;
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+#features .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #d1b3ff;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Permite ajustar las tarjetas en pantallas pequeñas */
+}
+
+.feature {
+    flex: 1 1 calc(33.333% - 1rem); /* Cada tarjeta ocupa un tercio del espacio */
+    background-color: #9c4af7;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex; /* Habilitar Flexbox */
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    justify-content: space-between; /* Distribuir el contenido */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature img {
+    max-width: 50px;
+    margin-bottom: 1rem;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    max-width: 60px;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.feature p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #eaeaea;
+    flex-grow: 1; /* Hace que el párrafo ocupe todo el espacio disponible */
+}
+
+.more-link {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.more-link:hover {
+    color: #d1b3ff;
+}
+
+
+#herramientas .features-grid {
+    display: flex;
+    justify-content: center; /* Asegura que las tarjetas estén centradas */
+    gap: 1.5rem; /* Espacio entre tarjetas */
+    flex-wrap: wrap;
+    margin-top: 2rem; /* Espacio entre título y tarjetas */
+}
+
+#herramientas .feature-backend {
+    flex: 1 1 calc(33.333% - 1rem); /* Tres tarjetas por fila */
+    background-color: #444;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#herramientas .feature-backend img {
+    max-width: 50px; /* Tamaño reducido para las imágenes */
+    margin-bottom: 1rem;
+}
+
+#herramientas .feature-backend:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+#herramientas .feature-backend h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #803bec; /* Color morado */
+}
+
+#herramientas .feature-backend p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #ddd; /* Texto gris claro */
+    flex-grow: 1; /* Hace que el texto se distribuya uniformemente */
+}
+
+#herramientas .more-link {
+    color: #803bec; /* Morado */
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+#herramientas .more-link:hover {
+    color: #fff; /* Cambia a blanco al pasar el cursor */
+}
+
+/* Redes y Protocolos de Internet */
+/* Redes y Protocolos de Internet */
+#protocolos {
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto oscuro */
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+#protocolos h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+#protocolos .features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Permite ajustar las tarjetas en pantallas pequeñas */
+}
+
+#protocolos .feature {
+    flex: 1 1 calc(33.333% - 1rem); /* Cada tarjeta ocupa un tercio del espacio */
+    background-color: #9c4af7; /* Fondo morado */
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#protocolos .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#protocolos .feature h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #fff; /* Títulos en blanco */
+}
+
+#protocolos .feature p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #eaeaea; /* Texto claro */
+}
+
+#protocolos .more-link {
+    color: #fff; /* Enlace blanco */
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+#protocolos .more-link:hover {
+    color: #d1b3ff; /* Enlace morado claro */
+}
+
+
+/* Servidores y Despliegue */
+#servidores {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+#servidores .feature {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color: #9c4af7;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#servidores .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#servidores .feature h3 {
+    color: #fff;
+}
+
+#servidores .feature p {
+    color: #eaeaea;
+}
+
+
+footer {
+    background-color: #f4f4f4; /* Fondo blanco */
+    color: #803bec; /* Texto morado */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.navbar .active {
+    background-color: #803bec;
+    color: #fff;
+}

@@ -1,0 +1,460 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #efefef;
+    padding: 1rem 0;
+    position: fixed; /* Mantener fija la navbar */
+    top: 0; /* Siempre en la parte superior */
+    width: 100%; /* Abarca todo el ancho */
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+/* Barra morada debajo de la navbar */
+.navbar-line {
+    width: 100%;
+    height: 2px;
+    background-color: #803bec;
+    position: fixed;
+    top: 56px; /* Justo debajo de la navbar */
+    z-index: 999;
+}
+
+/* Ajustar el contenido principal para evitar solapamiento */
+main {
+    margin-top: 80px; /* Ajusta según la altura de tu navbar y la barra morada */
+}
+
+
+.navbar li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navbar a {
+    display: inline-block;
+    background-color: #ededed;
+    color: #803bec;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #803bec;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar .active {
+    background-color: #803bec;
+    color: #fff;
+}
+
+/* Navbar bottom line */
+.navbar-line {
+    width: 100%;
+    height: 2px;
+    background-color: #803bec;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #9c4af7;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+.content {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #803bec;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.feature {
+    background-color: #9c4af7;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature img {
+    max-width: 60px;
+    margin-bottom: 1rem;
+}
+
+/* Interactive Demo */
+.interactive-demo {
+    margin-top: 2rem;
+}
+
+.interactive-demo button {
+    padding: 1rem 2rem;
+    background-color: #803bec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.interactive-demo button:hover {
+    background-color: #9c4af7;
+}
+
+#demo-text {
+    margin-top: 1rem;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #803bec; /* Color morado */
+    margin: 2rem 0; /* Espaciado vertical opcional */
+}
+
+/* Sección de ejemplo interactivo */
+.example-section {
+    background-color: #222; /* Fondo negro oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 10px; /* Opcional: bordes redondeados */
+    margin-top: 2rem;
+}
+
+/* Botón */
+.interactive-demo button {
+    padding: 1rem 2rem;
+    background-color: #803bec; /* Morado inicial */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza el hover */
+}
+
+.interactive-demo button:hover {
+    background-color: #9c4af7; /* Un morado más claro para hover */
+    transform: scale(1.05); /* Agranda ligeramente el botón al pasar el cursor */
+}
+
+#demo-text {
+    margin-top: 1rem;
+    color: #ccc; /* Texto gris claro */
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #803bec; /* Fondo blanco */
+    color: #f4f4f4; /* Texto morado */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+/* Sección de estructura HTML */
+#html-structure {
+    padding: 3rem 1rem;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333;
+    text-align: center;
+}
+
+#html-structure h2 {
+    font-size: 2rem;
+    color: #803bec; /* Morado para destacar el encabezado */
+    margin-bottom: 1.5rem;
+}
+
+#html-structure p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.html-parts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.html-example {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+}
+
+.html-example h3 {
+    color: #803bec;
+    margin-bottom: 1rem;
+}
+
+.html-example pre {
+    background-color: #222;
+    color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    overflow-x: auto;
+}
+
+/* Sección de introducción básica de HTML */
+#html-basics {
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+#html-basics h2 {
+    font-size: 2rem;
+    color: #803bec; /* Morado para los títulos */
+    margin-bottom: 1.5rem;
+}
+
+#html-basics p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.html-tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.html-tag h3 {
+    font-size: 1.25rem;
+    color: #803bec;
+    margin-bottom: 0.5rem;
+}
+
+.html-tag p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.html-tag pre {
+    background-color: #eee;
+    color: #333;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: left;
+    overflow-x: auto;
+}
+
+.html-example {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.html-example h3 {
+    color: #803bec;
+    margin-bottom: 1rem;
+}
+
+.html-example pre {
+    background-color: #222;
+    color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    overflow-x: auto;
+}
+
+.section-divider {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid #803bec;
+}
+
+/* Estilo para la sección de herramientas populares */
+.tools-section {
+    padding: 3rem 1rem;
+    background-color: #f9f9f9; /* Color de fondo claro */
+    color: #333; /* Texto oscuro */
+    text-align: center;
+}
+
+.tools-section h2 {
+    font-size: 2rem;
+    color: #803bec; /* Morado */
+    margin-bottom: 1.5rem;
+}
+
+.tools-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555; /* Texto ligeramente gris */
+}
+
+.tool-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+    gap: 1.5rem; /* Espaciado entre las tarjetas */
+    margin-top: 2rem;
+}
+
+.tool-category {
+    background-color: #fff; /* Fondo blanco */
+    padding: 1.5rem;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+.tool-category:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.tool-category h3 {
+    font-size: 1.2rem;
+    color: #803bec; /* Morado */
+    margin-bottom: 1rem;
+}
+
+.tool-category p {
+    font-size: 1rem;
+    color: #555; /* Gris oscuro */
+    line-height: 1.5;
+}
+
+.tool-category strong {
+    color: #333; /* Color destacado para los ejemplos */
+}
+
+/* Sección HTML Parts */
+#html-parts {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+#html-parts h2 {
+    font-size: 2rem;
+    color: #803bec; /* Morado */
+    margin-bottom: 1.5rem;
+}
+
+#html-parts p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.html-part-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptable a diferentes pantallas */
+    gap: 1.5rem; /* Espaciado entre elementos */
+}
+
+.html-part {
+    background-color: #fff; /* Fondo blanco */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.html-part:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.html-part h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #803bec; /* Morado */
+}
+
+.html-part p {
+    font-size: 1rem;
+    color: #555; /* Gris oscuro */
+    line-height: 1.5;
+}
+
+.code-example {
+    background-color: #f4f4f4; /* Fondo para el código */
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    color: #333;
+    overflow-x: auto; /* Permite desplazamiento si el código es largo */
+    margin-top: 1rem;
+    white-space: pre-wrap; /* Mantiene el formato del código */
+}

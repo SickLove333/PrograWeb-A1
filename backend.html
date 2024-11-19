@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducción al Back-End: aprende sobre las tecnologías y funciones principales.">
+    <title>Back-End - Desarrollo Web</title>
+    <link rel="stylesheet" href="assets/styles/frontend.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="frontend.html">Front-End</a></li>
+                <li><a href="backend.html" class="active">Back-End</a></li>
+                <li><a href="protocols.html">Redes y Protocolos</a></li>
+                <li><a href="servers.html">Servidores</a></li>
+            </ul>
+        </nav>
+        <div class="navbar-line"></div>
+    </header>
+
+    <main>
+        <!-- Introducción al Back-End -->
+        <section class="hero">
+            <h1>Desarrollo Back-End</h1>
+            <p>La lógica, bases de datos y servidores que hacen que las aplicaciones web funcionen.</p>
+        </section>
+
+        <!-- ¿Qué es el Back-End? -->
+        <section class="content">
+            <h2>¿Qué es el Back-End?</h2>
+            <p>El Back-End es la parte del desarrollo web que se encarga de la lógica detrás de las aplicaciones, el manejo de datos y la comunicación con servidores. Todo lo que no ves en una aplicación web probablemente ocurre en el Back-End.</p>
+            <div class="divider"></div>
+        </section>
+
+        <!-- Tecnologías principales -->
+        <section class="tools-section">
+            <h2>Tecnologías principales en el Back-End</h2>
+            <p>Conoce las herramientas y lenguajes más usados en el desarrollo del Back-End.</p>
+            <div class="tool-categories">
+                <div class="tool-category">
+                    <h3>Node.js</h3>
+                    <p>Un entorno de ejecución para JavaScript que permite desarrollar aplicaciones del lado del servidor.</p>
+                </div>
+                <div class="tool-category">
+                    <h3>Python</h3>
+                    <p>Un lenguaje versátil utilizado en frameworks como Django y Flask para crear aplicaciones web escalables.</p>
+                </div>
+                <div class="tool-category">
+                    <h3>PHP</h3>
+                    <p>Ampliamente utilizado para gestionar contenido dinámico en sitios como WordPress.</p>
+                </div>
+                <div class="tool-category">
+                    <h3>SQL</h3>
+                    <p>Lenguaje para gestionar y consultar bases de datos, utilizado con sistemas como MySQL y PostgreSQL.</p>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+
+        <!-- Funciones principales del Back-End -->
+        <section class="content">
+            <h2>Funciones principales del Back-End</h2>
+            <h3><span style="color: #803bec;">Gestión de bases de datos: </span>Almacenar, consultar y actualizar datos.</h3>
+<h3><span style="color: #803bec;">Lógica de negocio: </span>Procesar datos y aplicar reglas según la lógica de la aplicación.</h3>
+<h3><span style="color: #803bec;">Autenticación y seguridad: </span>Controlar acceso de usuarios y proteger la información.</h3>
+<h3><span style="color: #803bec;">Integración de APIs: </span>Conectar servicios externos como pasarelas de pago, redes sociales, etc.</h3>
+        </section>
+
+        <!-- Ejemplo práctico -->
+        <section class="example-section">
+            <h2>Ejemplo práctico: <span style="color: #803bec;">Conexión a una base de datos</span></h2>
+            <p>Este ejemplo utiliza Node.js y una base de datos SQLite para realizar una consulta básica.</p>
+            <div class="html-example">
+                <pre><code>
+// Requerir módulos
+const sqlite3 = require('sqlite3').verbose();
+
+// Conectar a la base de datos
+let db = new sqlite3.Database('./mi_base.db', (err) => {
+    if (err) {
+        return console.error(err.message);
+    }
+    console.log('Conectado a la base de datos.');
+});
+
+// Consultar datos
+db.all('SELECT * FROM usuarios', [], (err, rows) => {
+    if (err) {
+        throw err;
+    }
+    rows.forEach((row) => {
+        console.log(row);
+    });
+});
+
+// Cerrar la conexión
+db.close((err) => {
+    if (err) {
+        return console.error(err.message);
+    }
+    console.log('Conexión cerrada.');
+});
+                </code></pre>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>José Leonardo Jiménez Hernández</p>
+            <p>2001759</p>
+            <p>IAS</p>
+        </footer>
+</body>
+</html>
+

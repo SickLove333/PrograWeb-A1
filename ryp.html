@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora los conceptos esenciales de redes y protocolos en el desarrollo web.">
+    <title>Redes y Protocolos</title>
+    <link rel="stylesheet" href="assets/styles/frontend.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="frontend.html">Front-End</a></li>
+                <li><a href="backend.html">Back-End</a></li>
+                <li><a href="redes-y-protocolos.html" class="active">Redes y Protocolos</a></li>
+                <li><a href="servidores.html">Servidores</a></li>
+            </ul>
+            <div class="navbar-line"></div>
+        </nav>
+        <div class="hero">
+            <h1>Redes y Protocolos</h1>
+            <p>Descubre cómo las redes y los protocolos permiten la comunicación eficiente y segura en la web.</p>
+        </div>
+    </header>
+    <main>
+        <!-- Introducción -->
+        <section class="content">
+            <h2>¿Qué son las Redes y Protocolos?</h2>
+            <p>
+                Las redes permiten la conexión entre dispositivos para el intercambio de datos, mientras que los protocolos definen las reglas para esa comunicación.
+                Son la base del funcionamiento de Internet y de todas las aplicaciones web.
+            </p>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Protocolos principales -->
+        <section class="content">
+            <h2>Protocolos Fundamentales</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>TCP/IP</h3>
+                    <p>Protocolo base de la comunicación en Internet. Divide los datos en paquetes que son enviados y reensamblados en el destino.</p>
+                </div>
+                <div class="feature">
+                    <h3>HTTP/HTTPS</h3>
+                    <p>Protocolo utilizado para la transferencia de datos entre navegadores y servidores web. HTTPS asegura los datos con cifrado.</p>
+                </div>
+                <div class="feature">
+                    <h3>FTP</h3>
+                    <p>Protocolo para transferir archivos entre servidores y clientes. Se utiliza en procesos de despliegue y transferencia de contenido.</p>
+                </div>
+                <div class="feature">
+                    <h3>DNS</h3>
+                    <p>Convierte nombres de dominio legibles por humanos (como www.ejemplo.com) en direcciones IP comprensibles para las máquinas.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Conceptos avanzados -->
+        <section class="content">
+            <h2>Conceptos Clave</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Firewall</h3>
+                    <p>Dispositivo o software que protege redes bloqueando accesos no autorizados mientras permite el tráfico legítimo.</p>
+                </div>
+                <div class="feature">
+                    <h3>VPN</h3>
+                    <p>Red privada virtual que encripta la conexión y protege la privacidad del usuario en redes públicas.</p>
+                </div>
+                <div class="feature">
+                    <h3>WebSocket</h3>
+                    <p>Protocolo para comunicación bidireccional en tiempo real, ideal para aplicaciones como chats y videojuegos.</p>
+                </div>
+                <div class="feature">
+                    <h3>ICMP</h3>
+                    <p>Protocolo utilizado para diagnosticar problemas de red, como el comando "ping".</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Ejemplo práctico -->
+        <section class="example-section">
+            <h2>Ejemplo Práctico: Petición HTTP Básica</h2>
+            <p>Este ejemplo muestra cómo realizar una petición HTTP a un servidor desde Node.js.</p>
+            <div class="html-example">
+                <pre>
+const https = require('https');
+https.get('https://jsonplaceholder.typicode.com/posts/1', (resp) => {
+    let data = '';
+
+    // Recibir datos
+    resp.on('data', (chunk) => {
+        data += chunk;
+    });
+
+    // Finalizar respuesta
+    resp.on('end', () => {
+        console.log(JSON.parse(data));
+    });
+
+}).on("error", (err) => {
+    console.log("Error: " + err.message);
+});
+                </pre>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <p>José Leonardo Jiménez Hernández</p>
+            <p>2001759</p>
+            <p>IAS</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exploración detallada del desarrollo Front-End en la web.">
+    <title>Front-End</title>
+    <link rel="stylesheet" href="assets/styles/frontend.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="frontend.html" class="active">Front-End</a></li>
+                <li><a href="backend.html">Back-End</a></li>
+                <li><a href="protocolos.html">Redes y Protocolos</a></li>
+                <li><a href="servidores.html">Servidores</a></li>
+            </ul>
+        </nav>
+        <div class="navbar-line"></div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Desarrollo Front-End</h1>
+            <p>
+                Aprende sobre las tecnologías y herramientas que permiten construir las interfaces visuales que los usuarios ven e interactúan en los sitios web.
+            </p>
+        </section>
+
+        <!-- Qué es el Front-End -->
+        <section class="content">
+            <h2>¿Qué es el Front-End?</h2>
+            <p>
+                El desarrollo Front-End se centra en todo lo que los usuarios ven y utilizan directamente en sus navegadores. Desde colores y fuentes hasta animaciones y botones interactivos, el Front-End es responsable de la experiencia visual y de usuario.
+            </p>
+        </section>
+
+<div class="divider"></div>
+
+        <!-- Tecnologías principales -->
+        <section class="content">
+            <h2>Tecnologías principales del Front-End</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="assets/img/html_logo.png" alt="HTML Icon" class="feature-icon">
+                    <h3>HTML</h3>
+                    <p>
+                        HTML es el lenguaje de marcado que da estructura al contenido de las páginas web. Es el núcleo que define el contenido visual y su jerarquía.
+                    </p>
+                </div>
+                <div class="feature">
+                    <img src="assets/img/css_logo.png" alt="CSS Icon" class="feature-icon">
+                    <h3>CSS</h3>
+                    <p>
+                        CSS permite personalizar la apariencia de las páginas web, como colores, tipografías, tamaños y posicionamiento de elementos.
+                    </p>
+                </div>
+                <div class="feature">
+                    <img src="assets/img/js.png" alt="JavaScript Icon" class="feature-icon">
+                    <h3>JavaScript</h3>
+                    <p>
+                        JavaScript añade interactividad a las páginas web, como animaciones, validaciones de formularios y contenido dinámico.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+<div class="divider"></div>
+
+<section id="html-basics" class="section">
+    <h2>¿Qué es HTML y cómo funciona?</h2>
+    <p>
+        HTML, o Lenguaje de Marcado de Hipertexto (<strong><span style="color: #803bec;">HyperText Markup Language</span></strong>), es el estándar para estructurar el contenido en la web. Cada página web que visitas está construida con HTML. Es como los ladrillos que forman un edificio.
+    </p>
+    <p>
+        Las etiquetas HTML están encerradas entre los signos <code><strong><span style="color: #803bec;">&lt;</span></strong></code> y <code><strong><span style="color: #803bec;">&gt;</span></strong></code>. Por ejemplo, una etiqueta básica es <code><strong><span style="color: #803bec;">&lt;p&gt;</span></strong></code>, que representa un párrafo. 
+        La mayoría de las etiquetas tienen una etiqueta de apertura y una de cierre:
+    </p>
+    <h3><code><strong><span style="color: #803bec;">&lt;p&gt;</span></strong></code><span style="color: #803bec;">Esto es un párrafo.</span><code><strong><span style="color: #803bec;">&lt;/p&gt;</span></strong></code></h3>
+    <br>
+    <p>
+        La etiqueta de apertura <code><strong><span style="color: #803bec;">&lt;p&gt;</span></strong></code> indica dónde comienza el párrafo, y la etiqueta de cierre <code><strong><span style="color: #803bec;">&lt;/p&gt;</span></strong></code> indica dónde termina. El contenido va entre estas etiquetas.
+    </p>
+
+<div class="divider"></div>
+
+<section id="html-parts" class="section">
+    <h2>Partes principales de un documento HTML</h2>
+    <p>
+        A continuación, veremos cada una de las etiquetas esenciales con ejemplos sencillos. Estas etiquetas forman la base de cualquier página HTML.
+    </p>
+
+    <div class="html-part-grid">
+        <!-- DOCTYPE -->
+        <div class="html-part">
+            <h3><span style="color: #555;">&lt;!DOCTYPE html&gt;:</span> Declaración</h3>
+            <p>
+                Esta etiqueta le indica al navegador que el archivo sigue las reglas de HTML5.
+            </p>
+            <pre class="code-example">&lt;!DOCTYPE html&gt;</pre>
+        </div>
+
+        <!-- HTML -->
+        <div class="html-part">
+            <h3><span style="color: #555;">&lt;html&gt;:</span> La raíz del documento</h3>
+            <p>
+                Esta etiqueta contiene todo el contenido de la página web. Es la raíz del documento HTML.
+            </p>
+            <pre class="code-example">
+&lt;html&gt;
+    ...
+&lt;/html&gt;
+            </pre>
+        </div>
+
+        <!-- HEAD -->
+        <div class="html-part">
+            <h3><span style="color: #555;">&lt;head&gt;:</span> Información sobre la página</h3>
+            <p>
+                Contiene metadatos sobre la página, como el título que aparece en la pestaña del navegador.
+            </p>
+            <pre class="code-example">
+&lt;head&gt;
+    &lt;title&gt;Mi página&lt;/title&gt;
+&lt;/head&gt;
+            </pre>
+        </div>
+
+        <!-- BODY -->
+        <div class="html-part">
+            <h3><span style="color: #555;">&lt;body&gt;:</span> Contenido visible</h3>
+            <p>
+                Aquí va todo el contenido visible de la página, como texto, imágenes y enlaces.
+            </p>
+            <pre class="code-example">
+&lt;body&gt;
+    &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+&lt;/body&gt;
+            </pre>
+        </div>
+    </div>
+</section>
+<div class="html-example">
+    <h3>Ejemplo completo:</h3>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Mi página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;¡Hola, mundo!&lt;/h1&gt;
+    &lt;p&gt;Este es un ejemplo básico de HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</div>
+</section>
+
+
+<div class="divider"></div>
+
+        <!-- Herramientas populares -->
+        <section id="front-end-tools" class="section tools-section">
+            <h2>Herramientas populares para el Front-End</h2>
+            <p>
+                En el desarrollo Front-End, existen herramientas y tecnologías que ayudan a crear páginas web de manera más rápida, eficiente y con mejores resultados visuales. A continuación, explicamos las principales categorías de herramientas que debes conocer:
+            </p>
+        
+            <!-- Contenedor con la explicación por categorías -->
+            <div class="tool-categories">
+                <!-- Frameworks CSS -->
+                <div class="tool-category">
+                    <h3>Frameworks CSS:</h3>
+                    <p>
+                        Los frameworks CSS son bibliotecas de estilos predefinidos que te permiten diseñar páginas rápidamente. En lugar de escribir todo desde cero, puedes usar componentes ya hechos como botones, menús y diseños de cuadrícula.
+                    </p>
+                    <p><strong>Ejemplos:</strong> Bootstrap, Tailwind CSS</p>
+                </div>
+        
+                <!-- Frameworks de JavaScript -->
+                <div class="tool-category">
+                    <h3>Frameworks de JavaScript:</h3>
+                    <p>
+                        Estos frameworks simplifican la creación de interfaces de usuario interactivas. Ayudan a manejar eventos, actualizar contenido dinámicamente y estructurar mejor tu código JavaScript.
+                    </p>
+                    <p><strong>Ejemplos:</strong> React, Angular, Vue.js</p>
+                </div>
+        
+                <!-- Preprocesadores de CSS -->
+                <div class="tool-category">
+                    <h3>Preprocesadores de CSS:</h3>
+                    <p>
+                        Los preprocesadores son herramientas que extienden CSS con funciones como variables, anidación y cálculos matemáticos. Esto facilita la escritura y el mantenimiento del código CSS.
+                    </p>
+                    <p><strong>Ejemplos:</strong> Sass, Less</p>
+                </div>
+        
+                <!-- Control de versiones -->
+                <div class="tool-category">
+                    <h3>Control de versiones:</h3>
+                    <p>
+                        Herramientas como Git te permiten rastrear cambios en tu código, colaborar con otros desarrolladores y revertir errores si es necesario. Es una parte esencial del trabajo en equipo.
+                    </p>
+                    <p><strong>Ejemplos:</strong> Git y GitHub</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Interactividad con ejemplo -->
+        <section class="content example-section">
+            <h2>Ejemplo Interactivo</h2>
+            <p>
+                Aquí puedes cambiar el color de esta sección presionando el botón. Experimenta con la interacción del Front-End.
+            </p>
+            <div class="interactive-demo">
+                <button onclick="changeBackground()">Cambia el color del fondo</button>
+                <p id="demo-text">¡Haz clic en el botón para cambiar el color de fondo de esta sección!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>José Leonardo Jiménez Hernández</p>
+        <p>2001759</p>
+        <p>IAS</p>
+    </footer>
+
+    <script src="assets/scripts/frontend.js"></script>
+</body>
+</html>
