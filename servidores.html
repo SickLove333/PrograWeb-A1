@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce más sobre servidores web y herramientas de despliegue para mantener aplicaciones accesibles y seguras.">
+    <title>Servidores y Despliegue</title>
+    <link rel="stylesheet" href="assets/styles/frontend.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="frontend.html">Front-End</a></li>
+                <li><a href="backend.html">Back-End</a></li>
+                <li><a href="ryp.html">Redes y Protocolos</a></li>
+                <li><a href="servidores.html" class="active">Servidores</a></li>
+            </ul>
+            <div class="navbar-line"></div>
+        </nav>
+        <div class="navbar-line"></div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Servidores y Despliegue</h1>
+            <p>Estas son las herramientas y tecnologías clave para alojar aplicaciones web y garantizar su accesibilidad.</p>
+        </section>
+
+        <section class="content">
+            <h2>¿Qué son los Servidores Web?</h2>
+            <p>Los servidores web son programas o dispositivos que almacenan, procesan y entregan contenido web a los usuarios. Son el pilar fundamental de cualquier aplicación en línea.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section class="content">
+            <h2>Tipos de Servidores</h2>
+            <div class="html-part-grid">
+                <div class="html-part">
+                    <h3><span style="color: #803bec;">Servidor Apache: </span>El más utilizado a nivel global.</h3>
+                    <p>Es confiable, multiplataforma y ampliamente configurable. Ideal para la mayoría de las aplicaciones web.</p>
+                </div>
+                <div class="html-part">
+                    <h3><span style="color: #803bec;">Servidor Nginx: </span>Alto rendimiento.</h3>
+                    <p>Optimizado para manejar grandes volúmenes de tráfico simultáneo, Nginx es popular entre las aplicaciones modernas.</p>
+                </div>
+                <div class="html-part">
+                    <h3><span style="color: #803bec;">Microsoft IIS: </span>Integración con Windows.</h3>
+                    <p>Diseñado para funcionar en el ecosistema de Windows, este servidor es ideal para aplicaciones empresariales.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="content">
+            <h2>Herramientas de Despliegue</h2>
+            <p>El despliegue es el proceso de configurar y lanzar una aplicación en un entorno de producción. Estas son algunas de las herramientas más populares:</p>
+            <div class="tool-categories">
+                <div class="tool-category">
+                    <h3>Docker</h3>
+                    <p>Herramienta de contenedores que permite ejecutar aplicaciones en cualquier entorno, asegurando consistencia.</p>
+                </div>
+                <div class="tool-category">
+                    <h3>Kubernetes</h3>
+                    <p>Permite orquestar contenedores Docker para aplicaciones escalables y resilientes.</p>
+                </div>
+                <div class="tool-category">
+                    <h3>Jenkins</h3>
+                    <p>Automatiza el despliegue continuo de aplicaciones, integrándose con múltiples herramientas de desarrollo.</p>
+                </div>
+                <div class="tool-category">
+                    <h3>GitHub Actions</h3>
+                    <p>Automatiza flujos de trabajo, incluyendo pruebas y despliegues, directamente desde el repositorio.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="example-section">
+            <h2>Ejemplo Práctico: Despliegue con Docker</h2>
+            <p>Este ejemplo muestra cómo crear un contenedor básico para una aplicación web usando Docker.</p>
+            <pre class="html-example">
+# Dockerfile básico
+FROM node:14
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD ["node", "server.js"]
+            </pre>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>José Leonardo Jiménez Hernández</p>
+        <p>2001759</p>
+        <p>IAS</p>
+    </footer>
+</body>
+</html>

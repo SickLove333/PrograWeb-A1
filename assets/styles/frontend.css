@@ -458,3 +458,32 @@ footer {
     margin-top: 1rem;
     white-space: pre-wrap; /* Mantiene el formato del código */
 }
+
+/* Ajustar margen superior únicamente para la página de Redes y Protocolos */
+.body-redes {
+    padding-top: 80px; /* Altura de la navbar fija + barra morada */
+}
+
+/* Estilo específico para la imagen de ejemplo en la página de Frontend */
+.example-image {
+    max-width: 100%; /* Nunca será más grande que su contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    display: block; /* Quita espacios en línea no deseados */
+    margin: 1rem auto; /* Centra la imagen */
+    border-radius: 10px; /* Bordes redondeados para diseño consistente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+/* Ajuste para pantallas grandes */
+@media (min-width: 768px) {
+    .example-image {
+        max-width: 80%; /* Reduce el ancho en pantallas grandes */
+    }
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 767px) {
+    .example-image {
+        max-width: 90%; /* Ajusta para pantallas pequeñas */
+    }
+}
